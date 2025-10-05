@@ -65,6 +65,11 @@ public class ThingList {
         public void setNext(Node n) {
             next = n;
         }
+
+        @Override
+        public String toString() {
+            return data.toString();
+        }
     }
 
 }
