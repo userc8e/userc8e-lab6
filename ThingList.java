@@ -10,7 +10,9 @@ public class ThingList {
 
 
     // adds a new Node into the list
-    public void addThing(Node n) {
+    public void addThing(Thing t) {
+        Node n = new Node(t);
+        
         if (head == null) {
             head = n;
         } else {
