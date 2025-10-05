@@ -87,15 +87,17 @@ public class DotChaser {
 
     ThingList list = new ThingList();
 
-    if( count % N == 0 ) {
-      list.addThing(new TypeA(45, 50, 'r'));
-      list.addThing(new TypeB(55, 50, 'b'));
-      list.addThing(new TypeC(50, 50, 'y'));
-    }
+    while( true ) {
+      if( count % N == 0 ) {
+        list.addThing(new TypeA(45, 50, 'r'));
+        list.addThing(new TypeB(55, 50, 'b'));
+        list.addThing(new TypeC(50, 50, 'y'));
+      }
 
-    list.printAll();
-    list.moveAll(rand);
-    count++;
+      list.printAll();
+      list.moveAll(rand);
+      count++;
+  }
 
 
     /*if( args.length != 0 )

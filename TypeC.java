@@ -7,6 +7,11 @@ public class TypeC extends Thing {
 
     @Override
     public void maybeTurn(Random rand) {
-        //TO DO
+        int i = rand.nextInt(3);
+        if (i == 1) {
+            super.rightTurn();
+        } else {
+            super.leftTurn();
+        }
     }
 }
