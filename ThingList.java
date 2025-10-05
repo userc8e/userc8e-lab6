@@ -54,6 +54,7 @@ public class ThingList {
             data = t;
         }
 
+        // GETTERS
         public Thing getData() {
             return data;
         }
@@ -66,6 +67,7 @@ public class ThingList {
             next = n;
         }
 
+        // TOSTRING() method
         @Override
         public String toString() {
             return data.toString();
