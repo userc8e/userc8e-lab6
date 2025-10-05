@@ -1,9 +1,11 @@
 import java.util.Random;
 public class ThingList {
     Node head; //first Node in the list
+    int count;
 
     public ThingList() {
         head = null;
+        count = 0;
     }
 
 
@@ -34,11 +36,11 @@ public class ThingList {
 
 
     // moves all nodes around at random
-    public void moveAll() {
-        for( Node T = L; T != null; T = T.next ) {
-        maybeTurn(T.data);
-        step(T.data);
-      }
-      count++;
+    public void moveAll(Random rand) {
+        for( Node T = head; T != null; T = T.getNext()) {
+            T.getData().maybeTurn(rand);
+            T.getData().step();
+        }
+        count++;
     }
 }
