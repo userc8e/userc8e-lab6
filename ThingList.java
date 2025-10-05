@@ -1,7 +1,7 @@
 import java.util.Random;
 public class ThingList {
-    Node head; //first Node in the list
-    int count;
+    private Node head; //first Node in the list
+    private int count;
 
     public ThingList() {
         head = null;
