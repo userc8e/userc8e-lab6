@@ -83,9 +83,23 @@ public class DotChaser {
    */
   public static void main(String[] args) {
     int N = 200;
+    int count = 0;
 
-    if( args.length != 0 )
-      N = Integer.parseInt(args[0]);
+    ThingList list = new ThingList();
+
+    if( count % N == 0 ) {
+      list.addThing(new TypeA(45, 50, 'r'));
+      list.addThing(new TypeB(55, 50, 'b'));
+      list.addThing(new TypeC(50, 50, 'y'));
+    }
+
+    list.printAll();
+    list.moveAll(rand);
+    count++;
+
+
+    /*if( args.length != 0 )
+      N = Integer.parseInt(args[0]); */
 
     // INSTEAD OF A NODE, CREATE SOMETHING MORE USER-FRIENDLY.
     /*Node L = null;
