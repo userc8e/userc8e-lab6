@@ -18,5 +18,15 @@ public class ThingList {
         }
     }
 
-    
+    // prints all nodes
+    public void printAll() {
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.toString());
+            current = current.getNext();
+        } 
+        System.out.println("done");
+        System.out.flush();
+    }
+
 }
